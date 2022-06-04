@@ -1,0 +1,361 @@
+:root {
+    --primary-color: #b73235;
+    --secondary-color: #323743;
+    --bs-primary-rgb: 183, 50, 53;
+
+    --primary-font: "Raleway";
+    --secondary-font: "Barlow Semi Condensed";
+
+    --text-color: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* ---------------------------- */
+/* navbar */
+/* ---------------------------- */
+
+.navbar {
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar .navbar-brand {
+    max-width: 16rem;
+}
+
+.navbar .nav-link {
+    color: var(--text-color);
+}
+
+.btn-primary {
+    --bs-btn-bg: #b73235;
+    --bs-btn-border-color: #b73235;
+    --bs-btn-hover-bg: #db3e40;
+    --bs-btn-hover-border-color: #db3e40;
+    --bs-btn-active-bg: #db3e40;
+    --bs-btn-active-border-color: #db3e40;
+    --bs-btn-disabled-bg: #b73235;
+    --bs-btn-disabled-border-color: #b73235;
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.5s;
+    font-family: var(--secondary-font);
+}
+.btn-secondary {
+    --bs-btn-bg: #323743;
+    --bs-btn-border-color: #323743;
+    --bs-btn-hover-bg: #3b414e;
+    --bs-btn-hover-border-color: #3b414e;
+    --bs-btn-active-bg: #3b414e;
+    --bs-btn-active-border-color: #3b414e;
+    --bs-btn-disabled-bg: #323743;
+    --bs-btn-disabled-border-color: #323743;
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.5s;
+    font-family: var(--secondary-font);
+}
+.navbar .navbar-nav .nav-item .number {
+    color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.cart {
+    font-size: 1.2rem;
+}
+
+/* ---------------------------- */
+/* slider */
+/* ---------------------------- */
+.overlay {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+.overlay.left {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.sub-title {
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+}
+.title-heading {
+    font-size: 3.5rem;
+    line-height: 1.05;
+}
+.title-heading span {
+    color: var(--primary-color);
+    display: block;
+}
+.slider-btn .btn {
+    font-size: 1.1rem;
+}
+.controller button {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.controller {
+    bottom: 10%;
+    right: 5%;
+}
+
+/* ---------------------------- */
+/* features */
+/* ---------------------------- */
+.feature-heading h3 {
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    letter-spacing: -0.8px;
+    line-height: 1.05;
+}
+
+.feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 1rem;
+    row-gap: 0.5rem;
+}
+.feature .icon {
+    grid-row: 1 / span 2;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+}
+.feature:nth-child(even) .icon {
+    background-color: var(--secondary-color);
+}
+.feature:nth-child(odd) .icon {
+    background-color: var(--primary-color);
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.feature-text {
+    font-family: var(--secondary-font);
+}
+
+/* ---------------------------- */
+/* business */
+/* ---------------------------- */
+.business {
+    background-image: url(../images/bgn-team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.title-heading.section {
+    font-size: 2.5rem;
+}
+.title-text {
+    line-height: 1.6;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+}
+
+/* ---------------------------- */
+/* testimonial */
+/* ---------------------------- */
+.testimonials {
+    background-image: url(../images/bgn-people.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 10%;
+}
+.testimonials .card {
+    background-color: transparent;
+}
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.tag,
+.card-text {
+    font-family: var(--secondary-font);
+}
+.testimonial-wrapper {
+    margin: 0 -12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    place-items: center;
+}
+.card-img-top {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card-img-top:hover {
+    transform: rotateY(180deg);
+}
+/* ---------------------------- */
+/* clients */
+/* ---------------------------- */
+.clients .owl-dots {
+    display: none;
+}
+.clients .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.clients .owl-nav button {
+    position: absolute;
+    transform: translateY(-50%);
+}
+.clients .owl-nav .owl-next {
+    right: 0;
+}
+.clients .owl-nav .owl-prev span {
+    font-size: 3rem;
+}
+.clients .owl-nav .owl-next span {
+    font-size: 3rem;
+}
+/* ---------------------------- */
+/* quote */
+/* ---------------------------- */
+.quote {
+    padding: 6.5rem 0;
+    background-image: url(../images/bgn-quote.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 10%;
+    background-attachment: fixed;
+}
+/* ---------------------------- */
+/* portfolio */
+/* ---------------------------- */
+.portfolio::before,
+.portfolio::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+.portfolio::before {
+    width: 20%;
+    height: 40%;
+    top: 30%;
+    left: 0;
+    background-image: url(../images/bgn-portfolio-1.png);
+    background-position: left 65%;
+}
+.portfolio::after {
+    width: 40%;
+    height: 50%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-30%);
+    background-image: url(../images/bgn-portfolio-2.png);
+    background-position: right 65%;
+}
+
+.portfolio .list a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: all 0.5s;
+    position: relative;
+}
+
+.portfolio .list a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.portfolio .list a:hover {
+    color: var(--primary-color);
+}
+.portfolio .list a:hover::before,
+.portfolio .list .active a:before {
+    width: 10px;
+}
+
+.portfolio-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 1rem;
+}
+.p-img {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+.img-overlay {
+    background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1),
+        rgba(0, 0, 0, 0)
+    );
+    position: absolute;
+    inset: 0;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+.p-img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+.p-img:hover .img-overlay {
+    transform: translateY(0);
+}
+.img-overlay h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.img-overlay p {
+    font-family: var(--secondary-font);
+}
