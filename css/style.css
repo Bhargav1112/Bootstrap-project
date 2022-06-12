@@ -575,6 +575,12 @@ p {
 /* ---------------------------- */
 /* FOOTER */
 /* ---------------------------- */
+.footer-section {
+    background-image: url(../images/bgn-footer.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .footer-list-item a {
     text-decoration: none;
     color: var(--text-color);
