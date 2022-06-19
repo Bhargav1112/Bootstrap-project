@@ -124,6 +124,31 @@ p {
     font-size: 1.2rem;
 }
 
+.offcanvas.offcanvas-bottom {
+    height: 100% !important;
+}
+.offcanvas input {
+    width: 80%;
+    border-radius: 100px;
+    padding: 2rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+}
+.offcanvas button {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    bottom: auto;
+    left: auto;
+}
+.cart-div {
+    position: absolute;
+    max-width: 300px;
+    width: 200px;
+    right: 0;
+    top: 100%;
+}
 /* ---------------------------- */
 /* slider */
 /* ---------------------------- */
