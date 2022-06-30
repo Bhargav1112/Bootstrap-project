@@ -72,12 +72,7 @@ header .navbar-nav .nav-link {
 }
 
 section {
-    padding: 5rem 0;
-}
-
-/* section title */
-.title-text {
-    padding: 0 30%;
+    padding: 3rem 0;
 }
 /* ------------------------------ */
 /* About */
@@ -88,9 +83,11 @@ section {
 /* ------------------------------ */
 /* Experts */
 /* ------------------------------ */
+.experts .expert-img {
+}
 .experts .card img {
     width: 100%;
-    height: 16rem;
+    height: 10rem;
     object-fit: contain;
 }
 .experts .card .card-link:link,
@@ -158,4 +155,60 @@ section {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+}
+/* ------------------------------ */
+/* Newsletter */
+/* ------------------------------ */
+.newsletter button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1%;
+    left: auto;
+}
+/* ------------------------------ */
+/* Footer */
+/* ------------------------------ */
+footer {
+    padding: 5rem 0;
+}
+footer ul li {
+    margin: 0.5rem 0;
+}
+footer ul li a:link,
+footer ul li a:visited {
+    text-decoration: none;
+    color: var(--text-color);
+}
+footer ul li a:hover,
+footer ul li a:active {
+    opacity: 0.75;
+}
+
+/* ------------------------------ */
+/* Media-Queary */
+/* ------------------------------ */
+@media (max-width: 575px) {
+}
+
+@media (min-width: 992px) {
+    section {
+        padding: 5rem 0;
+    }
+    /* section title */
+    .title-text {
+        padding: 0 30%;
+    }
+}
+@media (min-width: 1200px) {
+    .experts .card img {
+        height: 16rem;
+    }
 }
