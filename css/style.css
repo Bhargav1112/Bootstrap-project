@@ -20,7 +20,7 @@ body {
 }
 
 section {
-    padding: 5rem 0;
+    padding: 2.5rem 0;
 }
 
 h1,
@@ -36,12 +36,14 @@ p {
 .sub-title {
     font-family: var(--secondary-font);
     font-size: 1.2rem;
+    font-size: 0.875rem;
 }
 .sub-title.footer {
     font-size: 0.875rem;
 }
 .title-heading {
     font-size: 3.5rem;
+    font-size: 1.5rem;
     line-height: 1.05;
 }
 .title-heading span {
@@ -50,7 +52,7 @@ p {
 }
 
 .title-heading.section {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 .title-heading.footer {
     font-size: 1.4rem;
@@ -58,7 +60,7 @@ p {
 .title-text {
     line-height: 1.6;
     font-family: var(--secondary-font);
-    font-size: 1.2rem;
+    font-size: 0.875rem;
 }
 .title-text.footer {
     font-size: 0.875rem;
@@ -74,6 +76,7 @@ p {
 
 .navbar .navbar-brand {
     max-width: 16rem;
+    max-width: 10rem;
 }
 
 .navbar .nav-link {
@@ -93,6 +96,8 @@ p {
     font-weight: 700;
     transition: all 0.5s;
     font-family: var(--secondary-font);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
 }
 .btn-secondary {
     --bs-btn-bg: #323743;
@@ -107,9 +112,12 @@ p {
     font-weight: 700;
     transition: all 0.5s;
     font-family: var(--secondary-font);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
 }
 .navbar .navbar-nav .nav-item .number {
     color: #fff;
+    font-size: 0.7rem;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -156,6 +164,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translateY(-50%);
+    padding-top: 2rem;
 }
 .overlay.left {
     top: 50%;
@@ -164,17 +173,18 @@ p {
 }
 
 .slider-btn .btn {
-    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-size: 0.5rem;
 }
 .controller button {
     background-color: transparent;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     text-align: center;
 }
 
 .controller {
-    bottom: 10%;
+    bottom: 0;
     right: 5%;
 }
 
@@ -183,7 +193,7 @@ p {
 /* ---------------------------- */
 .feature-heading h3 {
     color: var(--primary-color);
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     letter-spacing: -0.8px;
     line-height: 1.05;
 }
@@ -204,13 +214,13 @@ p {
 }
 .feature .icon {
     grid-row: 1 / span 2;
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     text-align: center;
     color: #fff;
     display: grid;
     place-items: center;
-    font-size: 3rem;
+    font-size: 1.8rem;
     border-radius: 50%;
 }
 .feature:nth-child(even) .icon {
@@ -221,7 +231,7 @@ p {
 }
 
 .feature-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 .feature-text {
@@ -262,9 +272,10 @@ p {
 .testimonial-wrapper {
     margin: 0 -12px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 20rem));
     gap: 2rem;
     place-items: center;
+    justify-content: center;
 }
 .testimonials .card-img-top {
     transition: all 0.5s;
@@ -347,6 +358,7 @@ p {
     font-weight: bold;
     transition: all 0.5s;
     position: relative;
+    font-size: 0.8rem;
 }
 
 .portfolio .list a:before {
@@ -666,7 +678,7 @@ p {
     text-decoration: none;
     color: var(--text-color);
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 0.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
